@@ -10,7 +10,7 @@ Summary:	Panel for the Flask Debug toolbar to capture and view line-by-line prof
 Summary(pl.UTF-8):	Pandel do Flask Debug toolbar do analizy statystyk wykonania kodu linia po linii
 Name:		python-%{module}
 Version:	1.0.2
-Release:	1
+Release:	2
 License:	MIT
 Group:		Libraries/Python
 Source0:	https://pypi.python.org/packages/source/F/Flask-DebugToolbar-LineProfilerPanel/Flask-DebugToolbar-LineProfilerPanel-%{version}.tar.gz
@@ -75,6 +75,8 @@ Dokumentacja API %{module}.
 
 %prep
 %setup -q -n Flask-DebugToolbar-LineProfilerPanel-%{version}
+# Until fixed upstream: 
+sed -i 's/line-profiler>=1.0b3/line_profiler>=1.0/g' setup.py
 
 %build
 %if %{with python2}
