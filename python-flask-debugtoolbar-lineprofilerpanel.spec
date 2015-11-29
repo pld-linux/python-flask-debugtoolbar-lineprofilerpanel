@@ -16,6 +16,7 @@ Group:		Libraries/Python
 Source0:	https://pypi.python.org/packages/source/F/Flask-DebugToolbar-LineProfilerPanel/Flask-DebugToolbar-LineProfilerPanel-%{version}.tar.gz
 # Source0-md5:	005d47cb98cff464ce9042b9bf66c230
 URL:		https://github.com/phleet/flask_debugtoolbar_lineprofilerpanel
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	rpm-pythonprov
 %if %{with python2}
 BuildRequires:	python-distribute
