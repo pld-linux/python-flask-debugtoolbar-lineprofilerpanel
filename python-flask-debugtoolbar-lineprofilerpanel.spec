@@ -25,7 +25,6 @@ BuildRequires:	python-line_profiler
 
 %endif
 %if %{with python3}
-BuildRequires:	python3-distribute
 BuildRequires:	python3-flask-debugtoolbar
 BuildRequires:	python3-line_profiler
 BuildRequires:	python3-modules
